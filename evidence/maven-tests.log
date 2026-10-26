@@ -1,0 +1,141 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.apex:carwash >--------------------------
+[INFO] Building carwash 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ carwash ---
+[INFO] Deleting C:\Users\MAHMOUD\Desktop\Car wash project\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ carwash ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ carwash ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 23 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ carwash ---
+[INFO] skip non existing resourceDirectory C:\Users\MAHMOUD\Desktop\Car wash project\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ carwash ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ carwash ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.apex.carwash.ApiKeyFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s -- in com.apex.carwash.ApiKeyFilterTest
+[INFO] Running com.apex.carwash.BookingIntegrationTest
+20:12:50.890 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.apex.carwash.BookingIntegrationTest]: BookingIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:12:51.045 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.apex.carwash.CarwashApplication for test class com.apex.carwash.BookingIntegrationTest
+20:12:51.170 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+20:12:51.170 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+20:12:51.211 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.4
+20:12:51.395 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+20:12:51.674 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+20:12:51.677 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+20:12:51.700 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 29.5.3
+  API Version: 1.54
+  Operating System: Docker Desktop
+  Total Memory: 7808 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+20:12:51.727 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Creating container for image: testcontainers/ryuk:0.12.0
+20:12:51.818 [main] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+20:12:51.997 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 is starting: b5662464d4b74248e7fb0382deddfc10716252a224065a5a0225e4620dd14e0f
+20:12:52.357 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 started in PT0.6303917S
+20:12:52.363 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+20:12:52.363 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+20:12:52.364 [main] INFO org.testcontainers.DockerClientFactory -- ?? Docker server version should be at least 1.6.0
+20:12:52.364 [main] INFO tc.postgres:16-alpine -- Creating container for image: postgres:16-alpine
+20:12:52.457 [main] INFO tc.postgres:16-alpine -- Container postgres:16-alpine is starting: e092c78d253c72ca9e1ac9defbabc9e1336cb8e5dce589ba1a96a06370c2770a
+20:12:53.936 [main] INFO tc.postgres:16-alpine -- Container postgres:16-alpine started in PT1.5711841S
+20:12:53.936 [main] INFO tc.postgres:16-alpine -- Container is started (JDBC URL: jdbc:postgresql://localhost:64065/test?loggerLevel=OFF)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-10-13T20:12:54.276+04:00  INFO 5924 --- [           main] c.apex.carwash.BookingIntegrationTest    : Starting BookingIntegrationTest using Java 23.0.2 with PID 5924 (started by MAHMOUD in C:\Users\MAHMOUD\Desktop\Car wash project)
+2026-10-13T20:12:54.276+04:00  INFO 5924 --- [           main] c.apex.carwash.BookingIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2026-10-13T20:12:55.393+04:00  INFO 5924 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13T20:12:55.473+04:00  INFO 5924 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2026-10-13T20:12:56.126+04:00  INFO 5924 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-10-13T20:12:56.143+04:00  INFO 5924 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-13T20:12:56.143+04:00  INFO 5924 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-10-13T20:12:56.218+04:00  INFO 5924 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-13T20:12:56.218+04:00  INFO 5924 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1924 ms
+2026-10-13T20:12:56.678+04:00  INFO 5924 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-13T20:12:56.897+04:00  INFO 5924 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d1f3639
+2026-10-13T20:12:56.898+04:00  INFO 5924 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-13T20:12:56.931+04:00  INFO 5924 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:64065/test?loggerLevel=OFF (PostgreSQL 16.15)
+2026-10-13T20:12:56.976+04:00  INFO 5924 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-13T20:12:56.981+04:00  INFO 5924 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.024s)
+2026-10-13T20:12:56.999+04:00  INFO 5924 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-13T20:12:57.070+04:00  INFO 5924 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-10-13T20:12:57.082+04:00  INFO 5924 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - schema"
+2026-10-13T20:12:57.134+04:00  INFO 5924 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - seed catalog"
+2026-10-13T20:12:57.174+04:00  INFO 5924 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.033s)
+2026-10-13T20:12:57.355+04:00  INFO 5924 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-13T20:12:57.426+04:00  INFO 5924 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-10-13T20:12:57.473+04:00  INFO 5924 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-13T20:12:57.769+04:00  INFO 5924 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13T20:12:57.852+04:00  INFO 5924 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13T20:12:58.668+04:00  INFO 5924 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13T20:12:58.715+04:00  INFO 5924 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13T20:12:59.100+04:00  INFO 5924 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-13T20:13:00.542+04:00  INFO 5924 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-13T20:13:00.966+04:00  INFO 5924 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-10-13T20:13:00.966+04:00  INFO 5924 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-13T20:13:00.967+04:00  INFO 5924 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-10-13T20:13:01.157+04:00  INFO 5924 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 53581 (http) with context path '/'
+2026-10-13T20:13:01.168+04:00  INFO 5924 --- [           main] c.apex.carwash.BookingIntegrationTest    : Started BookingIntegrationTest in 7.207 seconds (process running for 11.291)
+2026-10-13T20:13:01.918+04:00  WARN 5924 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2026-10-13T20:13:01.918+04:00 ERROR 5924 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uq_bookings_active_slot"
+  Detail: Key (branch_id, start_time)=(1, 2030-01-15 14:00:00+04) already exists.
+2026-10-13T20:13:02.029+04:00  INFO 5924 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-13T20:13:02.029+04:00  INFO 5924 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-13T20:13:02.030+04:00  INFO 5924 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-13T20:13:02.045+04:00  WARN 5924 --- [o-auto-1-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2026-10-13T20:13:02.046+04:00 ERROR 5924 --- [o-auto-1-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uq_bookings_active_slot"
+  Detail: Key (branch_id, start_time)=(1, 2030-01-15 14:00:00+04) already exists.
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.47 s -- in com.apex.carwash.BookingIntegrationTest
+[INFO] Running com.apex.carwash.BookingStatusTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.apex.carwash.BookingStatusTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ carwash ---
+[INFO] Building jar: C:\Users\MAHMOUD\Desktop\Car wash project\target\carwash.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.6:repackage (repackage) @ carwash ---
+[INFO] Replacing main artifact C:\Users\MAHMOUD\Desktop\Car wash project\target\carwash.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\MAHMOUD\Desktop\Car wash project\target\carwash.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.922 s
+[INFO] Finished at: 2026-10-13T20:13:05+04:00
+[INFO] ------------------------------------------------------------------------

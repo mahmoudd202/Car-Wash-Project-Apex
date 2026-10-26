@@ -1,0 +1,26 @@
+
+services:
+  db:
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: carwash
+      POSTGRES_USER: carwash
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    environment:
+      API_KEY: ${API_KEY}
+      DB_URL: jdbc:postgresql://db:5432/carwash
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

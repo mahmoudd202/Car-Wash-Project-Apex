@@ -1,0 +1,158 @@
+[
+  {
+    "method": "GET",
+    "path": "/actuator/health",
+    "status": 200,
+    "request": null,
+    "response": {
+      "status": "UP"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings/9",
+    "status": 200,
+    "request": null,
+    "response": {
+      "id": 9,
+      "branchId": 1,
+      "serviceId": 1,
+      "customerAlias": "minimal-demo",
+      "startTime": "2026-10-20T12:14:28.213522Z",
+      "status": "CONFIRMED",
+      "createdAt": "2026-10-13T12:14:38.697745Z"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings/1",
+    "status": 200,
+    "request": null,
+    "response": {
+      "id": 1,
+      "branchId": 1,
+      "serviceId": 1,
+      "customerAlias": "fresh-demo",
+      "startTime": "2026-10-20T11:18:21.503676Z",
+      "status": "CANCELLED",
+      "createdAt": "2026-10-13T11:18:25.67497Z"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 401,
+    "request": null,
+    "response": {
+      "timestamp": "2026-10-13T12:28:03.207872453Z",
+      "status": 401,
+      "error": "Unauthorized",
+      "message": "Missing or invalid X-API-Key.",
+      "path": "/api/bookings"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "status": 400,
+    "request": {},
+    "response": {
+      "timestamp": "2026-10-13T12:28:05.325317856Z",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Request validation failed.",
+      "path": "/api/bookings",
+      "fieldErrors": {
+        "startTime": "must not be null",
+        "branchId": "must not be null",
+        "serviceId": "must not be null",
+        "customerAlias": "must not be blank"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings?branchId=-1",
+    "status": 400,
+    "request": null,
+    "response": {
+      "timestamp": "2026-10-13T12:28:07.359556159Z",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Invalid input. Check JSON fields, IDs, status, and dates.",
+      "path": "/api/bookings"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings/999999",
+    "status": 404,
+    "request": null,
+    "response": {
+      "timestamp": "2026-10-13T12:28:09.396929275Z",
+      "status": 404,
+      "error": "Not Found",
+      "message": "Booking not found.",
+      "path": "/api/bookings/999999"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/missing",
+    "status": 404,
+    "request": null,
+    "response": {
+      "timestamp": "2026-10-13T12:28:11.442500089Z",
+      "status": 404,
+      "error": "Not Found",
+      "message": "Route not found.",
+      "path": "/api/missing"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/branches",
+    "status": 405,
+    "request": {},
+    "response": {
+      "timestamp": "2026-10-13T12:28:13.477651247Z",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "HTTP method not supported for this route.",
+      "path": "/api/branches"
+    }
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/bookings/1/status",
+    "status": 409,
+    "request": {
+      "status": "CONFIRMED"
+    },
+    "response": {
+      "timestamp": "2026-10-13T15:07:16.554673401Z",
+      "status": 409,
+      "error": "Conflict",
+      "message": "Invalid booking status transition.",
+      "path": "/api/bookings/1/status"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "status": 409,
+    "request": {
+      "customerAlias": "error-check",
+      "branchId": 1,
+      "startTime": "2026-10-20T12:14:28.213522Z",
+      "serviceId": 1
+    },
+    "response": {
+      "timestamp": "2026-10-13T12:28:17.711206875Z",
+      "status": 409,
+      "error": "Conflict",
+      "message": "The booking conflicts with existing data.",
+      "path": "/api/bookings"
+    }
+  }
+]
